@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://appbrewery.github.io/grid-sizing/fixed-size.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Size Grid</title>
+  <style>
+    body {
+      background-color: #1B1B1B;
+      color: aliceblue;
+    }
+
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.5;
+    }
+
+    .title {
+      color: crimson;
+      /* background-color: rgba(222, 222, 222, 0.3); */
+      font-family: Verdana, sans-serif;
+      font-size: 90%;
+      font-weight: 100;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: 100px 200px;
+      grid-template-columns: 400px 800px;
+    }
+
+    .grid-item {
+      font-size: 3rem;
+      background-color: darkviolet;
+      border: 5px solid goldenrod;
+      color: white;
+    }
+  </style>
+</head>
+
+<body cz-shortcut-listen="true">
+  <h1>Fixed Size Grid</h1>
+  <p class="">A <b class="title">fixed-size Grid</b> in CSS is a layout structure that allows you to create a grid-based
+    design where the<br>
+    <b>dimensions of rows and columns</b> are <b>fixed</b>, meaning they do not change dynamically
+    based on content.
+  </p>
+  <p>The below grid container with two fixed-size rows (100px and 200px) and two fixed-size columns (400px and 800px),
+    <br>resulting in a grid layout where each row and column has a predetermined, constant size that does not change
+    based
+    on the content it contains.
+  </p>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fractional Size Grid</title>
+  <style>
+    body {
+      background-color: #1B1B1B;
+      color: aliceblue;
+    }
+
+    li,
+    p {
+      font-size: 1.3em;
+      line-height: 1.5;
+    }
+
+    .title {
+      color: crimson;
+      /* background-color: rgba(222, 222, 222, 0.3); */
+      font-family: Verdana, sans-serif;
+      font-size: 90%;
+      font-weight: 100;
+    }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .grid-item {
+      font-size: 3rem;
+      background-color: darkviolet;
+      border: 5px solid goldenrod;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Fractional Size Grid</h1>
+  <p>A <b class="title">fractional size grid</b> in CSS is a layout structure that allows you to create a
+    grid-based design
+    <br> where the dimensions of rows and columns are specified as fractions of the available space.
+  </p>
+  <p>It is also known as a fractional unit grid.</p>
+  <p>In a fractional size grid, you use fractional units <b> (fr)</b> to specify the size of rows and columns.
+    <br>A fractional unit represents a fraction of the available space within the grid container.
+  </p>
+  <p>With fractional units, you can define the size of rows and columns relative to each other.
+    <br>For example, if you set two columns to <b>1fr</b> and <b>2fr</b>, the second column will be <b>twice</b> as wide
+    as the first column.
+  </p>
+  <p>In below grid container, we have 2 rows and 2 columns,
+  <ul>
+    <li>The <b><u>grid-template-rows</u></b>: 1fr 2fr :- property specifies that the grid container will have 2 rows,
+      and
+      the first row will be 1fr (one fraction of the available space) and the second row will be 2fr.</li>
+
+    <li>The <b><u>grid-template-columns</u></b>: 1fr 2fr :- property specifies that the grid container will have 2
+      columns,
+      and the first
+      column will be 1fr and the second column will be 2fr.</li>
+  </ul>
+  </p>
+
+  <p>In other words, the code you provided creates a grid with 2 rows and 2 columns,
+    <br> where the <b>first row</b> takes up <b>1/3</b> of the available space, the <b>second row</b> takes up
+    <b>2/3</b> of the available space,
+    <br> the <b>first column</b> takes up <b>1/3</b> of the available space, and the <b>second column</b> takes up
+    <b>2/3</b>
+    of the
+    available
+    space.
+  </p>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+  </div>
+</body>
+
+</html>

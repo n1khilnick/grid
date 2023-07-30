@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Size Grid</title>
+  <style>
+    body {
+      background-color: #1B1B1B;
+      color: aliceblue;
+    }
+
+    p {
+      font-size: 1.3em;
+      line-height: 1.5;
+    }
+
+    .title {
+      color: crimson;
+      /* background-color: rgba(222, 222, 222, 0.3); */
+      font-family: Verdana, sans-serif;
+      font-size: 90%;
+      font-weight: 100;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: 100px auto;
+      grid-template-columns: 200px auto;
+    }
+
+    .grid-item {
+      font-size: 3rem;
+      background-color: darkviolet;
+      border: 5px solid goldenrod;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Auto Size Grid</h1>
+  <p> An <b class="title">auto-size grid</b> in CSS is a layout structure that allows you to create a grid-based design
+    where
+    <br> the <b>dimensions of rows and columns</b> are <b>automatically determined </b> based on the content
+    theycontain.
+  </p>
+  <p>The grid <b>adapts</b> its size <i>dynamically</i> to fit the content within it.</p>
+  <p>In below container, the first row and first column have fixed sizes,
+    <br>while the second row and second column will dynamically adjust
+    their sizes based on the content they contain.
+    <br>This allows for a flexible layout that automatically adapts to the
+    content's dimensions.
+  </p>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+  </div>
+</body>
+
+</html>

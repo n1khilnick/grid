@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinMax Size Grid</title>
+  <style>
+    body {
+      background-color: #1B1B1B;
+      color: aliceblue;
+    }
+
+
+    li,
+    p {
+      font-size: 1.3em;
+      line-height: 1.5;
+    }
+
+    .title {
+      color: crimson;
+      /* background-color: rgba(222, 222, 222, 0.3); */
+      font-family: Verdana, sans-serif;
+      font-size: 90%;
+      font-weight: 100;
+    }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: 200px 400px;
+      grid-template-columns: 200px minmax(400px, 800px);
+    }
+
+    .grid-item {
+      font-size: 3rem;
+      background-color: darkviolet;
+      border: 5px solid goldenrod;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>MinMax Size Grid</h1>
+  <p>The <b class="title">MinMax Size Grid</b> in CSS is a layout structure that allows you to create a grid-based
+    design
+    <br>where the dimensions of <b>rows</b> and <b>columns</b> are specified using the <b>minmax()</b> function.
+  </p>
+  <p><b>minmax(min, max)</b>: This function allows you to define a <b>range</b> of acceptable sizes for <b>rows</b> and
+    <b>columns</b> in the
+    grid.
+  <ul>
+    <li>It takes two arguments, <b>min</b> and <b>max</b>, representing the <b>minimum</b> and <b>maximum</b> size,
+      respectively.</li>
+    <li>The final size of the row or column will be calculated to fit the content but will not <b><i>exceed the
+          maximum</i></b> or
+      <b><i>shrink below the minimum</i></b> size specified.
+    </li>
+    <li>Using the minmax() function, you can create versatile grid layouts that adapt to content while setting
+      boundaries on how much space each row and column can occupy.
+      <br> This helps in crafting responsive designs that look
+      great on various devices and screen sizes.
+    </li>
+  </ul>
+  </p>
+  <p>The below minmax-size grid container have two rows and two columns.
+    <br>The first row has a fixed height of 200 pixels, and the second row has a fixed height of 400 pixels.
+
+    <br>The first column has a fixed width of 200 pixels, and the second column
+    has a minimum width of 400 pixels
+    <br>
+    but can expand up to a maximum width of 800 pixels, creating a flexible layout
+    that adapts to varying content sizes.
+  </p>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+  </div>
+</body>
+
+</html>

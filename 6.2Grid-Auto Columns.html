@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-auto-columns</title>
+  <style>
+    body {
+      background-color: #1B1B1B;
+      color: aliceblue;
+    }
+
+    li,
+    p {
+      font-size: 1.4em;
+      line-height: 1.5;
+    }
+
+    .title {
+      color: crimson;
+      /* background-color: rgba(222, 222, 222, 0.3); */
+      font-family: Verdana, sans-serif;
+      font-size: 90%;
+      font-weight: 100;
+    }
+
+    .rows {
+      height: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding-top: 10px;
+      justify-content: space-evenly;
+      gap: 50px;
+    }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: repeat(2, 100px);
+      grid-template-columns: repeat(2, 100px);
+      /* No grid-auto-columns specified */
+    }
+
+    .grid-item {
+      font-size: 3rem;
+      background-color: darkviolet;
+      border: 5px solid goldenrod;
+      color: white;
+    }
+
+
+    .text {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 48%;
+      margin-left: 26%;
+    }
+
+
+    strike {
+      text-decoration: red line-through;
+    }
+
+    .grid-auto-columns {
+      display: grid;
+      grid-template-rows: repeat(2, 100px);
+      grid-template-columns: repeat(2, 100px);
+      grid-auto-columns: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>grid-auto-columns</h1>
+  <p>The <b class="title">grid-auto-columns</b> property <i>sets</i> a size for the <b>columns</b> in a grid container.
+  </p>
+  <p>This specifies the size of an implicitly-created grid columns track or pattern of tracks.
+  </p>
+  <p><b>Note:</b> This property affects only rows with the size not set.
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;which is shown below the case of <u><i>without
+        grid-auto-columns</i></u>
+  </p>
+  <p>In below with <b class="title">grid-auto-columns</b> a grid container with two rows and two columns, each having a
+    fixed size of 200 pixels.
+    <br>Additionally, it specifies that any overflowing content will be placed in automatically generated rows with a
+    height
+    of 300 pixels.
+  </p>
+
+
+  <div class="text">
+    <h2>without <strike>grid-auto-columns</strike>
+    </h2>&nbsp; &nbsp;&nbsp; &nbsp;
+
+    <h2>with <b class="title">grid-auto-columns</b></h2>
+  </div>
+  <section class="rows">
+
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+    </div>
+
+    <div class="grid-auto-columns">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+    </div>
+  </section>
+
+
+
+
+</body>
+
+</html>

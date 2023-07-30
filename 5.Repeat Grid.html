@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repeat Grid</title>
+  <style>
+    body {
+      background-color: #1B1B1B;
+      color: aliceblue;
+    }
+
+    li,
+    p {
+      font-size: 1.4em;
+      line-height: 1.5;
+    }
+
+    .title {
+      color: crimson;
+      /* background-color: rgba(222, 222, 222, 0.3); */
+      font-family: Verdana, sans-serif;
+      font-size: 90%;
+      font-weight: 100;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: repeat(2, 200px);
+      grid-template-columns: repeat(2, 100px);
+    }
+
+    .grid-item {
+      font-size: 3rem;
+      background-color: darkviolet;
+      border: 5px solid goldenrod;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Repeat Grid</h1>
+  <p>The <b class="title">Repeat Grid</b> in CSS is a layout feature that allows you to create a grid-based design
+    <br>with a repeated pattern of rows or columns,simplifying the grid declaration.
+  </p>
+  <p><b>repeat(repetitions, size) Function: </b>The core of the Repeat Grid is the repeat() function, which specifies
+    the pattern to be
+    repeated.
+  <ul>
+    <li>It takes two arguments: the number of <b>repetitions</b> and the <b>size</b> of each repetition.</li>
+    <li>You can use various CSS length units (like px, em, %, etc.) or fractional units (like fr) to define the size.
+    </li>
+  </ul>
+  </p>
+  <p>The below container have two rows and two columns using the repeat() function.
+    <br>It simplifies the grid declaration by defining a repeated pattern: both rows have a fixed height of 200 pixels,
+    and both columns have
+    a fixed width of 100 pixels.
+    <br>This results in a simple 2x2 grid layout with consistent row and column sizes.
+  </p>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+  </div>
+</body>
+
+</html>
